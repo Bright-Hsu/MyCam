@@ -287,7 +287,6 @@ public class Camera2Wrapper {
      * 切换摄像头
      */
     public void switchCamera() {
-        //获取摄像头的管理者
         CameraManager cameraManager = (CameraManager) mContext.getSystemService(Context.CAMERA_SERVICE);
         try {
             for (String id : cameraManager.getCameraIdList()) {
@@ -329,7 +328,7 @@ public class Camera2Wrapper {
 
         @Override
         public void onImageAvailable(ImageReader reader) {
-            Log.d(TAG, "onImageAvailable");
+            //Log.d(TAG, "onImageAvailable");
             Image readImage = reader.acquireNextImage();
             // 将Image转换成byte数组
             byte[] data = ImageUtil.getBytesFromImageAsType(readImage, 1);

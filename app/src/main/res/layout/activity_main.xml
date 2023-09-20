@@ -20,7 +20,7 @@
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入服务器IP (默认192.168.1.102)"
+        android:hint="请输入服务器IP (默认192.168.123.20)"
         android:minHeight="48dp"
         android:singleLine="true"
         android:selectAllOnFocus="true"
@@ -30,13 +30,13 @@
         android:id="@+id/btn_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开始/结束连接" />
+        android:text="开始传输" />
 
     <Button
         android:id="@+id/btn_trans"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开始/结束传输" />
+        android:text="更改配置" />
 
     <Button
         android:id="@+id/btn_switch"

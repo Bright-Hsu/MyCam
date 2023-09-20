@@ -20,7 +20,7 @@ public class ImageUtil {
             // So we only take the width part
             int width = image.getWidth();
             int height = image.getHeight();
-            Log.i(TAG, "image width = " + image.getWidth() + "; image height = " + image.getHeight());
+            //Log.i(TAG, "image width = " + image.getWidth() + "; image height = " + image.getHeight());
 
             //This is used to fill the final YUV data, which requires 1.5 times the picture size, because the YUV ratio is 4: 1: 1
             byte[] yuvBytes = new byte[width * height * ImageFormat.getBitsPerPixel(ImageFormat.YUV_420_888) / 8];
